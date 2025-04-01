@@ -19,7 +19,7 @@ const BlogStandard = () => {
     setMessage(""); // Reset message
 
     try {
-      const response = await fetch("http://localhost:5000/api/subscribe", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/subscribe`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const BlogStandard = () => {
   useEffect(() => {  
     const fetchBlogs = async () => {  
       try {  
-        const response = await fetch("http://localhost:5000/api/blogs");  
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/blogs`);
         const data = await response.json();  
         setBlogs(data.blogs); // Assuming the response structure as provided  
       } catch (error) {  

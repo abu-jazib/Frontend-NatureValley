@@ -11,7 +11,7 @@ const Sidebar = ({ show, handleClose }) => {
     setMessage(""); // Reset message
 
     try {
-      const response = await fetch("http://localhost:5000/api/subscribe", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/subscribe`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
