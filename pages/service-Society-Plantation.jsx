@@ -6,7 +6,7 @@ import Seo from "@/pages/_seo";
   
 const ServiceDetails = () => {  
   return (  
-    <Layout> 
+    <Layout header={3} footer={3}>
       <Seo
   title="NatureValley - Society Plantation Services | Green Spaces for Communities"
   description="Beautify your community with NatureValley’s society plantation services. We design and plant green spaces in residential societies, parks, and public areas."

@@ -56,7 +56,7 @@ const Contact = () => {
   };  
   
   return (  
-    <Layout>  
+    <Layout header={3} footer={3}> 
       <Seo  
         title="NatureValley - Contact Us for Landscaping and Gardening Services"  
         description="Get in touch with NatureValley for all your landscaping, gardening, and plant rental needs. We're here to help transform your space."  

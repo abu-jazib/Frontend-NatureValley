@@ -6,7 +6,7 @@ import Link from "next/link";
 const Team = () => {
   return (
     
-    <Layout>
+    <Layout header={3} footer={3}>
       <Seo
         title="NatureValley - Meet Our Expert Team | Landscaping and Gardening Services"
         description="Meet the team behind NatureValley. Our expert landscapers and gardening professionals are dedicated to transforming your outdoor spaces."

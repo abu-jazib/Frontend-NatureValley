@@ -5,10 +5,11 @@ import { sliderProps } from "@/src/sliderProps";
 import Seo from "@/pages/_seo";
 import Link from "next/link";
 import Slider from "react-slick";
-import ReactGA from 'react-ga4'; // Import ReactGA  
+
 const Index = () => {
   return (
     <Layout header={3} footer={3}>
+      
       <Seo
         title="NatureValley - Landscaping for Offices, Homes, and Societies | Online Plants"
         description="Explore NatureValley, your trusted source for landscaping services, plant rentals, and gardening solutions. We provide commercial and residential landscaping, green spaces, and more."
@@ -32,7 +33,7 @@ const Index = () => {
             <div class="single-slider">
                         <div class="image-layer bg_cover" style={{
                             backgroundImage:
-                              "url(assets/images/hero/hero_two-slider-1.jpg)",
+                              "url(https://naturevalley.blob.core.windows.net/assets/hero_two-slider-1.jpg)",
                           }}></div>
                         <div class="container">
                             <div class="row justify-content-center">
@@ -55,7 +56,7 @@ const Index = () => {
             <div class="single-slider">
                         <div class="image-layer bg_cover" style={{
                             backgroundImage:
-                              "url(assets/images/hero/hero_two-slider-2.jpg)",
+                              "url(https://naturevalley.blob.core.windows.net/assets/hero_two-slider-2.jpg)",
                           }}></div>
                         <div class="container">
                             <div class="row justify-content-center">
@@ -78,7 +79,7 @@ const Index = () => {
             <div class="single-slider">
                         <div class="image-layer bg_cover" style={{
                             backgroundImage:
-                              "url(assets/images/hero/hero_two-slider-3.jpg)",
+                              "url(https://naturevalley.blob.core.windows.net/assets/hero_two-slider-3.jpg)",
                           }}></div>
                         <div class="container">
                             <div class="row justify-content-center">
@@ -127,7 +128,7 @@ const Index = () => {
           <div className="col-xl-3 col-md-6 col-sm-12">  
             <div className="features-thumb-item-two mb-40 wow fadeInDown" data-wow-delay=".2s">  
               <div className="thumb">  
-                <img src="assets/images/features/features-6.jpg" alt="Image" />  
+                <img src="https://naturevalley.blob.core.windows.net/assets/features-6.jpg" alt="Image" />  
               </div>  
               <div className="text">  
                 <div className="icon">  
@@ -141,7 +142,7 @@ const Index = () => {
           <div className="col-xl-3 col-md-6 col-sm-12">  
             <div className="features-thumb-item-two mb-40 wow fadeInUp" data-wow-delay=".25s">  
               <div className="thumb">  
-                <img src="assets/images/features/features-7.jpg" alt="Image" />  
+                <img src="https://naturevalley.blob.core.windows.net/assets/features-7.jpg" alt="Image" />  
               </div>  
               <div className="text">  
                 <div className="icon">  
@@ -155,7 +156,7 @@ const Index = () => {
           <div className="col-xl-3 col-md-6 col-sm-12">  
             <div className="features-thumb-item-two mb-40 wow fadeInDown" data-wow-delay=".3s">  
               <div className="thumb">  
-                <img src="assets/images/features/features-8.jpg" alt="Image" />  
+                <img src="https://naturevalley.blob.core.windows.net/assets/features-8.jpg" alt="Image" />  
               </div>  
               <div className="text">  
                 <div className="icon">  
@@ -169,7 +170,7 @@ const Index = () => {
           <div className="col-xl-3 col-md-6 col-sm-12">  
             <div className="features-thumb-item-two mb-40 wow fadeInUp" data-wow-delay=".35s">  
               <div className="thumb">  
-                <img src="assets/images/features/features-9.jpg" alt="Image" />  
+                <img src="https://naturevalley.blob.core.windows.net/assets/features-9.jpg" alt="Image" />  
               </div>  
               <div className="text">  
                 <div className="icon">  
@@ -189,7 +190,7 @@ const Index = () => {
       {/*====== About BG ======*/}  
       <div  
         className="about-bg bg_cover wow fadeInLeft"  
-        style={{ backgroundImage: "url(assets/images/bg/about-bg-1.jpg)" }}  
+        style={{ backgroundImage: "url(	https://naturevalley.blob.core.windows.net/assets/about-bg-1.jpg)" }}  
       ></div>  
       <div className="container">  
         <div className="row align-items-center justify-content-end">  
@@ -286,7 +287,7 @@ const Index = () => {
                 </Link>  
                 <Link legacyBehavior href="/service-Society-Plantation">  
                   <a>  
-                    <img src="assets/images/service/sv-1.jpg" alt="Service Image" />  
+                    <img src="https://naturevalley.blob.core.windows.net/assets/sv-1.jpg" alt="Service Image" />  
                   </a>  
                 </Link>  
               </div>  
@@ -316,7 +317,7 @@ const Index = () => {
                 </Link>  
                 <Link legacyBehavior href="/service-GreenBelt-Development">  
                   <a>  
-                    <img src="assets/images/service/sv-2.jpg" alt="Service Image" />  
+                    <img src="https://naturevalley.blob.core.windows.net/assets/sv-2.jpg" alt="Service Image" />  
                   </a>  
                 </Link>  
               </div>  
@@ -346,7 +347,7 @@ const Index = () => {
                 </Link>  
                 <Link legacyBehavior href="/service-Office-Landscaping">  
                   <a>  
-                    <img src="assets/images/service/sv-3.jpg" alt="Service Image" />  
+                    <img src="https://naturevalley.blob.core.windows.net/assets/sv-3.jpg" alt="Service Image" />  
                   </a>  
                 </Link>  
               </div>  
@@ -376,7 +377,7 @@ const Index = () => {
                 </Link>  
                 <Link legacyBehavior href="/service-Commercial-Landscaping">  
                   <a>  
-                    <img src="assets/images/service/sv-4.jpg" alt="Service Image" />  
+                    <img src="https://naturevalley.blob.core.windows.net/assets/sv-4.jpg" alt="Service Image" />  
                   </a>  
                 </Link>  
               </div>  
@@ -406,7 +407,7 @@ const Index = () => {
                 </Link>  
                 <Link legacyBehavior href="/service-Residential-Landscaping">  
                   <a>  
-                    <img src="assets/images/service/sv-5.jpg" alt="Service Image" />  
+                    <img src="https://naturevalley.blob.core.windows.net/assets/sv-5.jpg" alt="Service Image" />  
                   </a>  
                 </Link>  
               </div>  
@@ -436,7 +437,7 @@ const Index = () => {
                 </Link>  
                 <Link legacyBehavior href="/service-Plant-Nursery">  
                   <a>  
-                    <img src="assets/images/service/sv-6.jpg" alt="Service Image" />  
+                    <img src="https://naturevalley.blob.core.windows.net/assets/sv-6.jpg" alt="Service Image" />  
                   </a>  
                 </Link>  
               </div>  

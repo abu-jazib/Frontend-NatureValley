@@ -6,6 +6,9 @@ import { animation } from "../utils";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import Script from "next/script";
+import { FloatingWhatsApp } from 'react-floating-whatsapp' 
+import Logo from "@/public/assets/images/favicon.png";
+
 const Layout = ({ header, children, footer }) => {
   useEffect(() => {
     niceSelect();
@@ -16,7 +19,15 @@ const Layout = ({ header, children, footer }) => {
   }, []);
 
   return (
-    <Fragment>    
+    <Fragment>  
+      <FloatingWhatsApp 
+        phoneNumber="+923328194499" 
+        accountName="NatureValley" 
+        avatar="/assets/images/logo.png"
+        statusMessage="Your Path to a Greener Tomorrow"
+        allowClickAway
+        chatMessage="Hi! Welcome to Nature Valley. How can we assist you today?"
+      />  
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1J69YXTYDF"></Script>
       <Script id="google-analytics">
         {

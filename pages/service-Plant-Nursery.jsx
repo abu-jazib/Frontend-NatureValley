@@ -6,7 +6,7 @@ import Seo from "@/pages/_seo";
   
 const ServiceDetails = () => {  
   return (  
-    <Layout>  
+    <Layout header={3} footer={3}>  
       <Seo
         title="NatureValley - Online Plant Nursery | Shop a Wide Selection of Plants"
         description="Browse NatureValley’s online plant nursery and shop for a variety of plants for your home, office, or garden. Find everything from indoor plants to landscaping greenery."

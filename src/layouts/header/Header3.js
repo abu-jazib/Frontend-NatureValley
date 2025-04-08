@@ -16,7 +16,7 @@ const Header3 = () => {
         show={searchModal}
         handleClose={() => setSearchModal(false)}
       />
-      <header className="header-area header-three">
+      <header className="header-area header-three transparent-header">
         <div className="header-top-bar-two white-bg d-none d-xl-block">
           <div className="container-fluid">
             <div className="row">

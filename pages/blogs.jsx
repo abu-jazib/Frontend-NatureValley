@@ -89,7 +89,7 @@ const BlogStandard = () => {
   } 
   
   return (  
-    <Layout>  
+    <Layout header={3} footer={3}> 
       <Seo  
         title="NatureValley Blogs - Expert Tips on Gardening & Landscaping"  
         description="Explore expert articles on indoor plants, landscaping ideas, and gardening tips. Stay updated with the latest trends from NatureValley."  

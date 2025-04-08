@@ -51,7 +51,7 @@ const BlogDetails = () => {
   } 
 
   return (
-    <Layout>
+    <Layout header={3} footer={3}>
       <Seo
         title={blog.title}
         description="Get in touch with NatureValley for all your landscaping, gardening, and plant rental needs. We're here to help transform your space."

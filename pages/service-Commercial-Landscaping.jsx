@@ -6,7 +6,7 @@ import Seo from "@/pages/_seo";
   
 const ServiceDetails = () => {  
   return (  
-    <Layout> 
+    <Layout header={3} footer={3}>
       <Seo
         title="NatureValley - Commercial Landscaping Services | Office and Business Landscaping"
         description="Transform your commercial spaces with NatureValley’s expert landscaping services. We offer office landscaping, green spaces, and maintenance for businesses."
