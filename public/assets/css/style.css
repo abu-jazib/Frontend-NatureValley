@@ -595,14 +595,11 @@ button {
   top: 0;
   width: 100vw;
   z-index: 99999;
-  display: flex; /* Ensure it uses flex to center its children */
-  justify-content: center; /* Horizontally center the loader */
-  align-items: center; }
+  display: flex; /* Ensure it uses flex to center its children */}
   .preloader .loader {
     position: absolute; /* Ensures it's centered inside the parent container */
     top: 50%;
-    left: 47%;
-    transform: translate(-50%, -50%); /* Centers the loader perfectly */
+    left: 47%; /* Centers the loader perfectly */
     text-align: center; }
   .preloader .pre-box {
     width: 50px;

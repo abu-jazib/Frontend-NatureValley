@@ -162,23 +162,27 @@ const BlogStandard = () => {
             </div>  
             <div className="col-xl-4 col-lg-5">  
               <div className="sidebar-widget-area"> 
-                  <div className="sidebar-widget widget-search gray-bg mb-40 wow fadeInUp">
-                    <h4 className="title">Newsletter</h4>
-                    <form onSubmit={handleSubscribe}>
-                      <div className="form_group">
-                        <input
-                          type="email"
-                          className="form_control"
-                          placeholder="Email Address"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          required
-                        />
-                        <button type="submit" className="main-btn secondary-btn">
-                          Subscribe Now
-                        </button>
-                      </div>
-                    </form>
+              <div className="sidebar-widget widget-newsletter gray-bg mb-30 wow fadeInUp">
+                    <h4 className="widget-title">Newsletter</h4>
+                    <div className="sidebar-content"> 
+                      <form onSubmit={handleSubscribe}>
+                        <div className="form_group">
+                          <input
+                            type="email"
+                            className="form_control"
+                            placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                          />
+                          <div className="form_group">
+                            <button type="submit" className="main-btn primary-btn">
+                              Subscribe Now
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                     {message && <p style={{ marginTop: "10px", color: "0B3D2C" }}>{message}</p>}
                   </div> 
                 {/*=== Author Widget ===*/}  

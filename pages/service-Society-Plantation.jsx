@@ -1,10 +1,38 @@
-import PageBanner from "@/src/components/PageBanner";  
+import PageBanner from "@/src/components/PageBanner"; 
+import { useEffect, useState } from "react";  
 import Partners from "@/src/components/Partners";  
 import Layout from "@/src/layouts/Layout";  
 import Link from "next/link";  
 import Seo from "@/pages/_seo";
   
 const ServiceDetails = () => {  
+  const [email, setEmail] = useState(""); 
+  const [message, setMessage] = useState("");
+    const handleSubscribe = async (e) => {
+      e.preventDefault();
+      setMessage(""); // Reset message
+
+      try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/subscribe`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          setMessage("Thank you for subscribing!");
+          setEmail(""); // Clear input
+        } else {
+          setMessage(data.message || "Subscription failed");
+        }
+      } catch (error) {
+        setMessage("Error connecting to the server.");
+      }
+    };
   return (  
     <Layout header={3} footer={3}>
       <Seo
@@ -63,27 +91,29 @@ const ServiceDetails = () => {
                     />  
                   </div>  
                 </div>  
-                <div className="sidebar-widget widget-newsletter gray-bg mb-30 wow fadeInUp">  
-                  <h4 className="widget-title">Newsletter</h4>  
-                  <div className="sidebar-content">   
-                    <form onSubmit={(e) => e.preventDefault()}>  
-                      <div className="form_group">  
-                        <input  
-                          type="email"  
-                          className="form_control"  
-                          placeholder="Email Address"  
-                          name="email"  
-                          required  
-                        />  
-                      </div>  
-                      <div className="form_group">  
-                        <button className="main-btn primary-btn">  
-                          Subscribe Now  
-                        </button>  
-                      </div>  
-                    </form>  
+                <div className="sidebar-widget widget-newsletter gray-bg mb-30 wow fadeInUp">
+                    <h4 className="widget-title">Newsletter</h4>
+                    <div className="sidebar-content"> 
+                      <form onSubmit={handleSubscribe}>
+                        <div className="form_group">
+                          <input
+                            type="email"
+                            className="form_control"
+                            placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                          />
+                          <div className="form_group">
+                            <button type="submit" className="main-btn primary-btn">
+                              Subscribe Now
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    {message && <p style={{ marginTop: "10px", color: "0B3D2C" }}>{message}</p>}
                   </div>  
-                </div>  
               </div>  
             </div>  
           </div>  
