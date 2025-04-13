@@ -5,7 +5,7 @@ import PageBanner from "@/src/components/PageBanner";
 import Partners from "@/src/components/Partners";
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
-import Seo from "@/pages/_seo";
+import BlogsSeo from "@/components/BlogsSeo";
 import DOMPurify from "dompurify";
 import "react-quill/dist/quill.snow.css"; // or "quill/dist/quill.bubble.css"
 
@@ -52,14 +52,17 @@ const BlogDetails = () => {
 
   return (
     <Layout header={3} footer={3}>
-      <Seo
+      <BlogsSeo
         title={blog.title}
-        description="Get in touch with NatureValley for all your landscaping, gardening, and plant rental needs. We're here to help transform your space."
-        keywords={blog.tags ? blog.tags.join(", ") : "landscaping, gardening, plants"}
+        description={blog.description || "Discover expert landscaping tips and insights from NatureValley."}
+        keywords={blog.tags ? blog.tags.join(", ") : "landscaping, nursery, plants"}
         ogTitle={`NatureValley - ${blog.title}`}
-        ogDescription="Need landscaping or gardening solutions? Reach out to NatureValley for personalized services and expert advice."
+        ogDescription={blog.description}
+        ogImage={blog.imageUrl}
         twitterTitle={`NatureValley - ${blog.title}`}
-        twitterDescription="Have questions or need landscaping services? Contact NatureValley today for expert advice and professional landscaping solutions."
+        twitterDescription={blog.description}
+        twitterImage={blog.imageUrl}
+        url={`https://naturevalley.com.pk/blog-details?id=${id}`} // Replace with real URL
       />
       <PageBanner pageName={blog.title} />
       {/*====== Start Blog Details section ======*/}
