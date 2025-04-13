@@ -5,8 +5,23 @@ import { sliderProps } from "@/src/sliderProps";
 import Seo from "@/pages/_seo";
 import Link from "next/link";
 import Slider from "react-slick";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    const fetchVisitorCount = async () => {
+      try {
+        const response = await fetch("https://backend.naturevalley.com.pk/api/checkVisitors");
+        if (!response.ok) {
+          throw new Error("Failed to fetch visitor count");
+        }
+      } catch (error) {
+        console.error("Error fetching visitor count:", error);
+      }
+    };
+
+    fetchVisitorCount();
+  }, []);
   return (
     <Layout header={3} footer={3}>
       

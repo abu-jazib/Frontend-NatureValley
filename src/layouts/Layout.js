@@ -26,6 +26,7 @@ const Layout = ({ header, children, footer }) => {
         avatar="/assets/images/logo.png"
         statusMessage="Your Path to a Greener Tomorrow"
         allowClickAway
+        chatboxHeight={400}
         chatMessage="Hi! Welcome to Nature Valley. How can we assist you today?"
       />  
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1J69YXTYDF"></Script>
