@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <HelmetProvider>
     <Fragment>
-      <Head>
+      
         {/* Default SEO (fallback) for pages without Seo component */}
         <Seo
           title={defaultTitle}
@@ -71,7 +71,7 @@ const App = ({ Component, pageProps }) => {
         <link rel="stylesheet" href="assets/vendor/animate.css" />
         <link rel="stylesheet" href="assets/css/default.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
-      </Head>
+      
 
       {loading && <Preloader />}
       {!loading && <Component {...pageProps} />}
