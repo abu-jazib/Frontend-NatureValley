@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from "react";
 import "/styles/globals.css";
 import Seo from "@/pages/_seo";
 import "react-quill/dist/quill.snow.css"; // or "quill/dist/quill.bubble.css"
+import { HelmetProvider } from 'react-helmet-async';
 
 
 
@@ -22,6 +23,7 @@ const App = ({ Component, pageProps }) => {
     "online plants, plants in lahore, landscaping, naturevalley, naturevalley lahore";
 
   return (
+    <HelmetProvider>
     <Fragment>
       <Head>
         {/* Default SEO (fallback) for pages without Seo component */}
@@ -74,6 +76,7 @@ const App = ({ Component, pageProps }) => {
       {loading && <Preloader />}
       {!loading && <Component {...pageProps} />}
     </Fragment>
+    </HelmetProvider>
   );
 };
 

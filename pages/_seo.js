@@ -1,4 +1,5 @@
-import Head from "next/head";
+
+import { Helmet } from 'react-helmet-async';
 
 const Seo = ({
   title,
@@ -9,7 +10,8 @@ const Seo = ({
   twitterTitle,
   twitterDescription,
 }) => (
-  <Head>
+  <div>
+    <Helmet>
     {/*====== Standard Meta Tags =====*/}
     <meta charSet="utf-8" />
     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -32,7 +34,9 @@ const Seo = ({
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={twitterTitle || title} />
     <meta name="twitter:description" content={twitterDescription || description} />
-  </Head>
+    </Helmet>
+      {/* Rest of your component */}
+  </div>
 );
 
 export default Seo;
