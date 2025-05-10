@@ -28,6 +28,7 @@
     "react-quill": "^2.0.0",
     "react-slick": "^0.29.0",
     "react-visibility-sensor": "^5.1.1",
+    "sharp": "^0.34.1",
     "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
   }

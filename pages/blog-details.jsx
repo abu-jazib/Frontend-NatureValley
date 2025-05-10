@@ -5,7 +5,7 @@ import PageBanner from "@/src/components/PageBanner";
 import Partners from "@/src/components/Partners";
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
-import BlogsSeo from "@/components/BlogsSeo";
+import Seo from "@/pages/_seo"; 
 import DOMPurify from "dompurify";
 import "react-quill/dist/quill.snow.css"; // or "quill/dist/quill.bubble.css"
 
@@ -52,7 +52,7 @@ const BlogDetails = () => {
 
   return (
     <Layout header={3} footer={3}>
-      <BlogsSeo
+      <Seo
         title={blog.title}
         description={blog.description || "Discover expert landscaping tips and insights from NatureValley."}
         keywords={blog.tags ? blog.tags.join(", ") : "landscaping, nursery, plants"}
