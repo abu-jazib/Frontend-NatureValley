@@ -103,6 +103,21 @@ const Menu = () => {
             </li>
           </ul>
         </li>
+        <li className="menu-item has-children">
+          <a href="#">
+            AI Tools
+            <span className="dd-trigger">
+              <i className="far fa-angle-down" />
+            </span>
+          </a>
+          <ul className="sub-menu">
+            <li>
+              <Link legacyBehavior href="https://ai.naturevalley.com.pk/">
+                <a>Plant Identifier & Disease Finder</a>
+              </Link>
+            </li>
+          </ul>
+        </li>
         <li className="menu-item">
           <Link legacyBehavior href="/team">
             <a>Our Team</a>
