@@ -21,11 +21,11 @@ const App = ({ Component, pageProps }) => {
 
   return (
       <Fragment>
-        <Seo
+        {/* <Seo
           title={defaultTitle}
           description={defaultDescription}
           keywords={defaultKeywords}
-        />
+        /> */}
 
         {/* ✅ Move all <link> tags inside <Head> */}
         <Head>
