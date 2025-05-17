@@ -23,9 +23,8 @@ const Index = () => {
     fetchVisitorCount();
   }, []);
   return (
-    <Layout header={3} footer={3}>
-      
-      <Seo
+    <>
+    <Seo
         title="Nature Valley – Pakistan’s First AI-Powered Nursery & Landscaping Agency"
         description="Nature Valley uses AI to identify plants, detect diseases, and design intelligent landscapes for homes, offices, and communities across Pakistan."
         keywords="landscaping services, online plants, home gardening, office landscaping, society plantation, NatureValley"
@@ -34,6 +33,9 @@ const Index = () => {
         twitterTitle="NatureValley - Your Partner in Landscaping and Gardening"
         twitterDescription="NatureValley provides expert landscaping services for homes, offices, and societies. We specialize in plant rentals, green spaces, and more."
       />
+    <Layout header={3} footer={3}>
+      
+      
       {/*====== Start Banner Section ======*/}
       <section className="banner-section">
         {/*====== Hero Wrapper ======*/}
@@ -484,6 +486,7 @@ const Index = () => {
       <Partners />
       {/*====== End Partners Section ======*/}
     </Layout>
+    </>
   );
 };
 export default Index;
