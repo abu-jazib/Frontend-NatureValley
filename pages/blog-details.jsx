@@ -52,18 +52,6 @@ const BlogDetails = () => {
 
   return (
     <Layout header={3} footer={3}>
-      <Seo
-        title={blog.title}
-        description={blog.description || "Discover expert landscaping tips and insights from NatureValley."}
-        keywords={blog.tags ? blog.tags.join(", ") : "landscaping, nursery, plants"}
-        ogTitle={`NatureValley - ${blog.title}`}
-        ogDescription={blog.description}
-        ogImage={blog.imageUrl}
-        twitterTitle={`NatureValley - ${blog.title}`}
-        twitterDescription={blog.description}
-        twitterImage={blog.imageUrl}
-        url={`https://naturevalley.com.pk/blog-details?id=${id}`} // Replace with real URL
-      />
       <PageBanner pageName={blog.title} />
       {/*====== Start Blog Details section ======*/}
 
@@ -186,5 +174,23 @@ const BlogDetails = () => {
     </Layout>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title: blog.title,
+        description: blog.description || "Discover expert landscaping tips and insights from NatureValley.",
+        keywords: blog.tags ? blog.tags.join(", ") : "landscaping, nursery, plants",
+        ogTitle: `NatureValley - ${blog.title}`,
+        ogDescription: blog.description,
+        ogImage: blog.imageUrl,
+        twitterTitle: `NatureValley - ${blog.title}`,
+        twitterDescription: blog.description,
+        twitterImage: blog.imageUrl,
+      },
+    },
+  };
+}
 
 export default BlogDetails;
