@@ -52,6 +52,7 @@ const BlogDetails = () => {
 
   return (
     <Layout header={3} footer={3}>
+      
       <PageBanner pageName={blog.title} />
       {/*====== Start Blog Details section ======*/}
 
@@ -175,9 +176,15 @@ const BlogDetails = () => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
+  const { id } = context.query;
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/blogs/${id}`);
+  const blog = await res.json();
+
   return {
     props: {
+      blog,
       seo: {
         title: blog.title,
         description: blog.description || "Discover expert landscaping tips and insights from NatureValley.",
