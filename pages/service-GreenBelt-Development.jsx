@@ -35,15 +35,6 @@ const ServiceDetails = () => {
     };
   return (  
     <Layout header={3} footer={3}>  
-      <Seo
-        title="NatureValley - Greenbelt Development Services for Urban Spaces"
-        description="Create lush greenbelt areas with NatureValley’s greenbelt development services. We specialize in planting and maintaining green spaces in urban environments."
-        keywords="greenbelt development, urban landscaping, green spaces, environmental landscaping, city landscaping"
-        ogTitle="NatureValley - Greenbelt Development Experts"
-        ogDescription="NatureValley provides greenbelt development services to enhance urban spaces with lush landscaping and sustainable green areas."
-        twitterTitle="NatureValley - Greenbelt Development for Cities"
-        twitterDescription="We develop greenbelt areas in urban spaces, making your city environment greener and more sustainable."
-      />
       <PageBanner pageName={"GreenBelt Development"} />  
       {/*====== Start Service Details section ======*/}  
   
@@ -125,6 +116,23 @@ const ServiceDetails = () => {
       <Partners />  
     </Layout>  
   );  
-};  
+}; 
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Greenbelt Development Services for Urban Spaces",
+        description:"Create lush greenbelt areas with NatureValley’s greenbelt development services. We specialize in planting and maintaining green spaces in urban environments.",
+        keywords:"greenbelt development, urban landscaping, green spaces, environmental landscaping, city landscaping",
+        ogTitle:"NatureValley - Greenbelt Development Experts",
+        ogDescription:"NatureValley provides greenbelt development services to enhance urban spaces with lush landscaping and sustainable green areas.",
+        twitterTitle:"NatureValley - Greenbelt Development for Cities",
+        twitterDescription:"We develop greenbelt areas in urban spaces, making your city environment greener and more sustainable.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default ServiceDetails;  

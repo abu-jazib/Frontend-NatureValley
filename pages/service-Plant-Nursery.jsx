@@ -35,15 +35,6 @@ const ServiceDetails = () => {
     }; 
   return (  
     <Layout header={3} footer={3}>  
-      <Seo
-        title="NatureValley - Online Plant Nursery | Shop a Wide Selection of Plants"
-        description="Browse NatureValley’s online plant nursery and shop for a variety of plants for your home, office, or garden. Find everything from indoor plants to landscaping greenery."
-        keywords="online plant nursery, indoor plants, outdoor plants, gardening, plants for sale"
-        ogTitle="NatureValley - Your Online Plant Nursery"
-        ogDescription="Shop NatureValley’s wide selection of plants for all your gardening needs. From indoor plants to outdoor greenery, find the perfect plant for your space."
-        twitterTitle="NatureValley - Your Trusted Plant Nursery"
-        twitterDescription="Explore a variety of plants at NatureValley’s online nursery. Find the perfect plant for your home, office, or garden."
-      />
       <PageBanner pageName={"Plant Sales and Nursery"} />  
       {/*====== Start Service Details section ======*/}  
   
@@ -125,6 +116,23 @@ const ServiceDetails = () => {
       <Partners />  
     </Layout>  
   );  
-};  
+}; 
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Online Plant Nursery | Shop a Wide Selection of Plants",
+        description:"Browse NatureValley’s online plant nursery and shop for a variety of plants for your home, office, or garden. Find everything from indoor plants to landscaping greenery.",
+        keywords:"online plant nursery, indoor plants, outdoor plants, gardening, plants for sale",
+        ogTitle:"NatureValley - Your Online Plant Nursery",
+        ogDescription:"Shop NatureValley’s wide selection of plants for all your gardening needs. From indoor plants to outdoor greenery, find the perfect plant for your space.",
+        twitterTitle:"NatureValley - Your Trusted Plant Nursery",
+        twitterDescription:"Explore a variety of plants at NatureValley’s online nursery. Find the perfect plant for your home, office, or garden.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default ServiceDetails;  

@@ -490,7 +490,7 @@ export async function getStaticProps() {
         ogDescription:"NatureValley offers landscaping and gardening solutions for homes, offices, societies, and plant rental services. Explore our services today.",
         twitterTitle:"NatureValley - Your Partner in Landscaping and Gardening",
         twitterDescription:"NatureValley provides expert landscaping services for homes, offices, and societies. We specialize in plant rentals, green spaces, and more.",
-        
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
       },
     },
   };

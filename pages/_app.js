@@ -18,7 +18,7 @@ const App = ({ Component, pageProps }) => {
     description = "Explore Nature Valley, your trusted source for plants, landscaping, and gardening solutions.",
     keywords = "online plants, plants in lahore, landscaping, naturevalley, naturevalley lahore",
     ogTitle,
-    ogImage,
+    ogImage = "https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg", 
     ogDescription,
     twitterTitle,
     twitterDescription,

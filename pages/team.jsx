@@ -7,15 +7,6 @@ const Team = () => {
   return (
     
     <Layout header={3} footer={3}>
-      <Seo
-        title="NatureValley - Meet Our Expert Team | Landscaping and Gardening Services"
-        description="Meet the team behind NatureValley. Our expert landscapers and gardening professionals are dedicated to transforming your outdoor spaces."
-        keywords="landscaping team, expert landscapers, gardening professionals, landscaping services, NatureValley team"
-        ogTitle="NatureValley - Meet Our Landscaping and Gardening Experts"
-        ogDescription="Learn more about the skilled professionals at NatureValley who are transforming landscapes and providing exceptional gardening services."
-        twitterTitle="NatureValley - Meet Our Expert Team"
-        twitterDescription="Discover the talented team at NatureValley. Our experts are passionate about transforming landscapes and providing top-tier gardening services."
-      />
       <PageBanner pageName={"Meet Our Founders"} />
       
       {/*====== End Skills Section  ======*/}
@@ -121,4 +112,21 @@ const Team = () => {
     </Layout>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Meet Our Expert Team | Landscaping and Gardening Services",
+        description:"Meet the team behind NatureValley. Our expert landscapers and gardening professionals are dedicated to transforming your outdoor spaces.",
+        keywords:"landscaping team, expert landscapers, gardening professionals, landscaping services, NatureValley team",
+        ogTitle:"NatureValley - Meet Our Landscaping and Gardening Experts",
+        ogDescription:"Learn more about the skilled professionals at NatureValley who are transforming landscapes and providing exceptional gardening services.",
+        twitterTitle:"NatureValley - Meet Our Expert Team",
+        twitterDescription:"Discover the talented team at NatureValley. Our experts are passionate about transforming landscapes and providing top-tier gardening services.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
 export default Team;

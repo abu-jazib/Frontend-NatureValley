@@ -89,16 +89,7 @@ const BlogStandard = () => {
   } 
   
   return (  
-    <Layout header={3} footer={3}> 
-      <Seo  
-        title="NatureValley Blogs - Expert Tips on Gardening & Landscaping"  
-        description="Explore expert articles on indoor plants, landscaping ideas, and gardening tips. Stay updated with the latest trends from NatureValley."  
-        keywords="NatureValley blog, gardening tips, landscaping ideas, indoor plants care, sustainable gardening"  
-        ogTitle="NatureValley Blogs - Your Guide to Better Gardening & Landscaping"  
-        ogDescription="Discover expert advice, plant care guides, and landscaping inspiration on the NatureValley blog."  
-        twitterTitle="NatureValley Blogs - Gardening & Landscaping Tips"  
-        twitterDescription="Get the best gardening and landscaping tips from NatureValley. Read expert articles today!"  
-      />  
+    <Layout header={3} footer={3}>  
       <PageBanner pageName={"Blogs"} />  
       <section className="blog-standard-section pt-100 pb-60">  
         <div className="container">  
@@ -245,5 +236,22 @@ const BlogStandard = () => {
     </Layout>  
   );  
 };  
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley Blogs - Expert Tips on Gardening & Landscaping" ,
+        description:"Explore expert articles on indoor plants, landscaping ideas, and gardening tips. Stay updated with the latest trends from NatureValley."  ,
+        keywords:"NatureValley blog, gardening tips, landscaping ideas, indoor plants care, sustainable gardening"  ,
+        ogTitle:"NatureValley Blogs - Your Guide to Better Gardening & Landscaping"  ,
+        ogDescription:"Discover expert advice, plant care guides, and landscaping inspiration on the NatureValley blog."  ,
+        twitterTitle:"NatureValley Blogs - Gardening & Landscaping Tips"  ,
+        twitterDescription:"Get the best gardening and landscaping tips from NatureValley. Read expert articles today!",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default BlogStandard;  

@@ -35,15 +35,6 @@ const ServiceDetails = () => {
     }; 
   return (  
     <Layout header={3} footer={3}> 
-      <Seo
-  title="NatureValley - Residential Landscaping Services | Beautify Your Home's Outdoors"
-  description="Create a beautiful garden with Nature Valley's residential landscaping services. We specialize in designing, planting, and maintaining residential landscapes for your home."
-  keywords="residential landscaping, home gardening, garden design, landscape services, backyard landscaping"
-  ogTitle="NatureValley - Residential Landscaping for Your Home"
-  ogDescription="Enhance your home’s outdoor beauty with NatureValley’s residential landscaping services. From garden design to maintenance, we do it all."
-  twitterTitle="NatureValley - Residential Landscaping Experts"
-  twitterDescription="Make your home’s outdoors beautiful with expert residential landscaping services from NatureValley."
-/>
       <PageBanner pageName={"Residential Landscaping"} />  
       {/*====== Start Service Details section ======*/}  
   
@@ -126,5 +117,22 @@ const ServiceDetails = () => {
     </Layout>  
   );  
 };  
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Residential Landscaping Services | Beautify Your Home's Outdoors",
+        description:"Create a beautiful garden with Nature Valley's residential landscaping services. We specialize in designing, planting, and maintaining residential landscapes for your home.",
+        keywords:"residential landscaping, home gardening, garden design, landscape services, backyard landscaping",
+        ogTitle:"NatureValley - Residential Landscaping for Your Home",
+        ogDescription:"Enhance your home’s outdoor beauty with NatureValley’s residential landscaping services. From garden design to maintenance, we do it all.",
+        twitterTitle:"NatureValley - Residential Landscaping Experts",
+        twitterDescription:"Make your home’s outdoors beautiful with expert residential landscaping services from NatureValley.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default ServiceDetails;  

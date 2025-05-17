@@ -56,16 +56,7 @@ const Contact = () => {
   };  
   
   return (  
-    <Layout header={3} footer={3}> 
-      <Seo  
-        title="NatureValley - Contact Us for Landscaping and Gardening Services"  
-        description="Get in touch with NatureValley for all your landscaping, gardening, and plant rental needs. We're here to help transform your space."  
-        keywords="contact NatureValley, landscaping services contact, gardening services, office landscaping, home gardening"  
-        ogTitle="NatureValley - Contact Us for Landscaping & Gardening Services"  
-        ogDescription="Need landscaping or gardening solutions? Reach out to NatureValley for personalized services and expert advice."  
-        twitterTitle="NatureValley - Contact Us Today"  
-        twitterDescription="Have questions or need landscaping services? Contact NatureValley today for expert advice and professional landscaping solutions."  
-      />  
+    <Layout header={3} footer={3}>  
       <PageBanner pageName="Contact Us" />  
       {/*====== Start Contact Info section ======*/}  
   
@@ -247,5 +238,22 @@ const Contact = () => {
     </Layout>  
   );  
 };  
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Contact Us for Landscaping and Gardening Services",  
+        description:"Get in touch with NatureValley for all your landscaping, gardening, and plant rental needs. We're here to help transform your space.",  
+        keywords:"contact NatureValley, landscaping services contact, gardening services, office landscaping, home gardening",  
+        ogTitle:"NatureValley - Contact Us for Landscaping & Gardening Services",  
+        ogDescription:"Need landscaping or gardening solutions? Reach out to NatureValley for personalized services and expert advice.",  
+        twitterTitle:"NatureValley - Contact Us Today",  
+        twitterDescription:"Have questions or need landscaping services? Contact NatureValley today for expert advice and professional landscaping solutions.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"   
+      },
+    },
+  };
+}
   
 export default Contact;  

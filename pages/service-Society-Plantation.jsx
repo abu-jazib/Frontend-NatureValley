@@ -34,16 +34,7 @@ const ServiceDetails = () => {
       }
     };
   return (  
-    <Layout header={3} footer={3}>
-      <Seo
-  title="NatureValley - Society Plantation Services | Green Spaces for Communities"
-  description="Beautify your community with NatureValley’s society plantation services. We design and plant green spaces in residential societies, parks, and public areas."
-  keywords="society plantation, community landscaping, park landscaping, public space gardening, green community spaces"
-  ogTitle="NatureValley - Society Plantation Services"
-  ogDescription="NatureValley offers society plantation services to enhance community living with beautiful green spaces, parks, and landscaped areas."
-  twitterTitle="NatureValley - Society Plantation for Communities"
-  twitterDescription="We create green spaces for communities with our society plantation services. Transform your society with NatureValley."
-/> 
+    <Layout header={3} footer={3}> 
       <PageBanner pageName={"Society Plantation"} />  
       {/*====== Start Service Details section ======*/}  
   
@@ -125,6 +116,23 @@ const ServiceDetails = () => {
       <Partners />  
     </Layout>  
   );  
-};  
+}; 
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Society Plantation Services | Green Spaces for Communities",
+        description:"Beautify your community with NatureValley’s society plantation services. We design and plant green spaces in residential societies, parks, and public areas.",
+        keywords:"society plantation, community landscaping, park landscaping, public space gardening, green community spaces",
+        ogTitle:"NatureValley - Society Plantation Services",
+        ogDescription:"NatureValley offers society plantation services to enhance community living with beautiful green spaces, parks, and landscaped areas.",
+        twitterTitle:"NatureValley - Society Plantation for Communities",
+        twitterDescription:"We create green spaces for communities with our society plantation services. Transform your society with NatureValley.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default ServiceDetails;  

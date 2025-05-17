@@ -34,16 +34,7 @@ const ServiceDetails = () => {
       }
     };
   return (  
-    <Layout header={3} footer={3}>
-      <Seo
-        title="NatureValley - Commercial Landscaping Services | Office and Business Landscaping"
-        description="Transform your commercial spaces with NatureValley’s expert landscaping services. We offer office landscaping, green spaces, and maintenance for businesses."
-        keywords="commercial landscaping, office landscaping, business landscaping, landscaping services, professional landscaping"
-        ogTitle="NatureValley - Expert Commercial Landscaping Services"
-        ogDescription="Discover NatureValley’s commercial landscaping services. We specialize in office landscaping, green spaces, and creating beautiful environments for businesses."
-        twitterTitle="NatureValley - Commercial Landscaping Experts"
-        twitterDescription="Transform your commercial space with our expert landscaping services. Contact us for office landscaping and more."
-      /> 
+    <Layout header={3} footer={3}> 
       <PageBanner pageName={"Commercial Landscaping"} />  
       {/*====== Start Service Details section ======*/}  
   
@@ -174,5 +165,22 @@ const ServiceDetails = () => {
     </Layout>  
   );  
 };  
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Commercial Landscaping Services | Office and Business Landscaping",
+        description:"Transform your commercial spaces with NatureValley’s expert landscaping services. We offer office landscaping, green spaces, and maintenance for businesses.",
+        keywords:"commercial landscaping, office landscaping, business landscaping, landscaping services, professional landscaping",
+        ogTitle:"NatureValley - Expert Commercial Landscaping Services",
+        ogDescription:"Discover NatureValley’s commercial landscaping services. We specialize in office landscaping, green spaces, and creating beautiful environments for businesses.",
+        twitterTitle:"NatureValley - Commercial Landscaping Experts",
+        twitterDescription:"Transform your commercial space with our expert landscaping services. Contact us for office landscaping and more.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default ServiceDetails;  

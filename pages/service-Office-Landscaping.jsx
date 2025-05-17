@@ -35,15 +35,6 @@ const ServiceDetails = () => {
     };
   return (  
     <Layout header={3} footer={3}>
-      <Seo
-  title="NatureValley - Office Landscaping Services | Create a Green Office Environment"
-  description="Enhance your office's ambiance with NatureValley's office landscaping services. From indoor plants to exterior green spaces, we design and maintain your office garden."
-  keywords="office landscaping, office plants, indoor plants, exterior landscaping, workplace green spaces"
-  ogTitle="NatureValley - Office Landscaping Experts"
-  ogDescription="Make your office a green and productive space with NatureValley’s office landscaping services. We specialize in interior and exterior office gardens."
-  twitterTitle="NatureValley - Green Office Landscaping"
-  twitterDescription="Transform your office into a green, refreshing space with our expert office landscaping services."
-/>  
       <PageBanner pageName={"Office Landscaping"} />  
       {/*====== Start Service Details section ======*/}  
   
@@ -126,5 +117,22 @@ const ServiceDetails = () => {
     </Layout>  
   );  
 };  
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"NatureValley - Office Landscaping Services | Create a Green Office Environment",
+        description:"Enhance your office's ambiance with NatureValley's office landscaping services. From indoor plants to exterior green spaces, we design and maintain your office garden.",
+        keywords:"office landscaping, office plants, indoor plants, exterior landscaping, workplace green spaces",
+        ogTitle:"NatureValley - Office Landscaping Experts",
+        ogDescription:"Make your office a green and productive space with NatureValley’s office landscaping services. We specialize in interior and exterior office gardens.",
+        twitterTitle:"NatureValley - Green Office Landscaping",
+        twitterDescription:"Transform your office into a green, refreshing space with our expert office landscaping services.",
+        ogImage:"https://naturevalley.blob.core.windows.net/assets/og%20image%20.jpg"  
+      },
+    },
+  };
+}
   
 export default ServiceDetails;  
