@@ -13,18 +13,26 @@ const App = ({ Component, pageProps }) => {
     }, 1000);
   }, []);
 
-  const defaultTitle = "Nature Valley - Your Online Nursery";
-  const defaultDescription =
-    "Explore Nature Valley, your trusted source for plants, landscaping, and gardening solutions.";
-  const defaultKeywords =
-    "online plants, plants in lahore, landscaping, naturevalley, naturevalley lahore";
+  const {
+    title = "Nature Valley - Your Online Nursery",
+    description = "Explore Nature Valley, your trusted source for plants, landscaping, and gardening solutions.",
+    keywords = "online plants, plants in lahore, landscaping, naturevalley, naturevalley lahore",
+    ogTitle,
+    ogDescription,
+    twitterTitle,
+    twitterDescription,
+  } = pageProps.seo || {};
 
   return (
       <Fragment>
         <Seo
-          title={defaultTitle}
-          description={defaultDescription}
-          keywords={defaultKeywords}
+          title={title}
+          description={description}
+          keywords={keywords}
+          ogTitle={ogTitle}
+          ogDescription={ogDescription}
+          twitterTitle={twitterTitle}
+          twitterDescription={twitterDescription}
         />
 
         {/* ✅ Move all <link> tags inside <Head> */}

@@ -23,19 +23,9 @@ const Index = () => {
     fetchVisitorCount();
   }, []);
   return (
-    <>
-    <Seo
-        title="Nature Valley – Pakistan’s First AI-Powered Nursery & Landscaping Agency"
-        description="Nature Valley uses AI to identify plants, detect diseases, and design intelligent landscapes for homes, offices, and communities across Pakistan."
-        keywords="landscaping services, online plants, home gardening, office landscaping, society plantation, NatureValley"
-        ogTitle="NatureValley - Transforming Landscapes for Homes, Offices & Societies"
-        ogDescription="NatureValley offers landscaping and gardening solutions for homes, offices, societies, and plant rental services. Explore our services today."
-        twitterTitle="NatureValley - Your Partner in Landscaping and Gardening"
-        twitterDescription="NatureValley provides expert landscaping services for homes, offices, and societies. We specialize in plant rentals, green spaces, and more."
-      />
     <Layout header={3} footer={3}>
       
-      
+     
       {/*====== Start Banner Section ======*/}
       <section className="banner-section">
         {/*====== Hero Wrapper ======*/}
@@ -486,7 +476,24 @@ const Index = () => {
       <Partners />
       {/*====== End Partners Section ======*/}
     </Layout>
-    </>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      seo: {
+        title:"Nature Valley – Pakistan’s First AI-Powered Nursery & Landscaping Agency",
+        description:"Nature Valley uses AI to identify plants, detect diseases, and design intelligent landscapes for homes, offices, and communities across Pakistan.",
+        keywords:"landscaping services, online plants, home gardening, office landscaping, society plantation, NatureValley",
+        ogTitle:"NatureValley - Transforming Landscapes for Homes, Offices & Societies",
+        ogDescription:"NatureValley offers landscaping and gardening solutions for homes, offices, societies, and plant rental services. Explore our services today.",
+        twitterTitle:"NatureValley - Your Partner in Landscaping and Gardening",
+        twitterDescription:"NatureValley provides expert landscaping services for homes, offices, and societies. We specialize in plant rentals, green spaces, and more.",
+        
+      },
+    },
+  };
+}
+
 export default Index;
