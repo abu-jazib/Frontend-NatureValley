@@ -187,7 +187,7 @@ export async function getServerSideProps(context) {
       blog,
       seo: {
         title: blog.title,
-        description: blog.description || "Discover expert landscaping tips and insights from NatureValley.",
+        description: "Discover expert landscaping tips and insights from NatureValley.",
         keywords: blog.tags ? blog.tags.join(", ") : "landscaping, nursery, plants",
         ogTitle: `NatureValley - ${blog.title}`,
         ogDescription: blog.description,

@@ -6,6 +6,7 @@ const Seo = ({
   description,
   keywords,
   ogTitle,
+  ogImage,
   ogDescription,
   twitterTitle,
   twitterDescription,
@@ -28,7 +29,7 @@ const Seo = ({
     <meta property="og:type" content="website" />
     <meta property="og:title" content={ogTitle || title} />
     <meta property="og:description" content={ogDescription || description} />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content={ogImage} />
 
     {/* Twitter Tags */}
     <meta name="twitter:card" content="summary_large_image" />
