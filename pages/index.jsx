@@ -26,8 +26,8 @@ const Index = () => {
     <Layout header={3} footer={3}>
       
       <Seo
-        title="NatureValley - Landscaping for Offices, Homes, and Societies | Online Plants"
-        description="Explore NatureValley, your trusted source for landscaping services, plant rentals, and gardening solutions. We provide commercial and residential landscaping, green spaces, and more."
+        title="Nature Valley – Pakistan’s First AI-Powered Nursery & Landscaping Agency"
+        description="Nature Valley uses AI to identify plants, detect diseases, and design intelligent landscapes for homes, offices, and communities across Pakistan."
         keywords="landscaping services, online plants, home gardening, office landscaping, society plantation, NatureValley"
         ogTitle="NatureValley - Transforming Landscapes for Homes, Offices & Societies"
         ogDescription="NatureValley offers landscaping and gardening solutions for homes, offices, societies, and plant rental services. Explore our services today."
@@ -56,10 +56,11 @@ const Index = () => {
                                     
                                     <div class="hero-content text-center">
                                         <span class="sub-title" data-animation="fadeInUp" data-delay=".4s">Welcome To</span>
-                                        <h1 data-animation="fadeInDown" data-delay=".5s">NatureValley</h1>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Transforming spaces with expert landscaping, creating sustainable beauty for homes, offices, and communities.</p>
+                                        <h2 style={{ color: 'white' }} data-animation="fadeInDown" data-delay=".5s">Pakistan’s First AI-Powered Nursery & Landscaping Agency</h2>
+                                        <p></p>
+                                        <p data-animation="fadeInUp" data-delay=".6s">Blending Technology with Nature to Create Smarter, Greener Spaces.</p>
                                         <div class="hero-button mb-30" data-animation="fadeInDown" data-delay=".7s">
-                                            <a href="/contact" class="main-btn golden-btn mb-10">Get a Quote</a>
+                                            <a href="https://ai.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
                                 
                                         </div>
                                     </div>
@@ -79,10 +80,11 @@ const Index = () => {
                                     
                                     <div class="hero-content text-center">
                                         <span class="sub-title" data-animation="fadeInUp" data-delay=".4s">Welcome To</span>
-                                        <h1 data-animation="fadeInDown" data-delay=".5s">NatureValley</h1>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Transforming spaces with expert landscaping, creating sustainable beauty for homes, offices, and communities.</p>
+                                        <h2 style={{ color: 'white' }} data-animation="fadeInDown" data-delay=".5s">Pakistan’s First AI-Powered Nursery & Landscaping Agency</h2>
+                                        <p></p>
+                                        <p data-animation="fadeInUp" data-delay=".6s">Blending Technology with Nature to Create Smarter, Greener Spaces.</p>
                                         <div class="hero-button mb-30" data-animation="fadeInDown" data-delay=".7s">
-                                            <a href="contact" class="main-btn golden-btn mb-10">Get a Quote</a>
+                                            <a href="https://ai.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
                                 
                                         </div>
                                     </div>
@@ -102,10 +104,11 @@ const Index = () => {
                                     
                                     <div class="hero-content text-center">
                                         <span class="sub-title" data-animation="fadeInUp" data-delay=".4s">Welcome To</span>
-                                        <h1 data-animation="fadeInDown" data-delay=".5s">NatureValley</h1>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Transforming spaces with expert landscaping, creating sustainable beauty for homes, offices, and communities.</p>
+                                        <h2 style={{ color: 'white' }} data-animation="fadeInDown" data-delay=".5s">Pakistan’s First AI-Powered Nursery & Landscaping Agency</h2>
+                                        <p></p>
+                                        <p data-animation="fadeInUp" data-delay=".6s">Blending Technology with Nature to Create Smarter, Greener Spaces.</p>
                                         <div class="hero-button mb-30" data-animation="fadeInDown" data-delay=".7s">
-                                            <a href="contact" class="main-btn golden-btn mb-10">Get a Quote</a>
+                                            <a href="https://ai.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
                                 
                                         </div>
                                     </div>
