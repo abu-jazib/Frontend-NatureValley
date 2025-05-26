@@ -112,8 +112,13 @@ const Menu = () => {
           </a>
           <ul className="sub-menu">
             <li>
-              <Link legacyBehavior href="https://ai.naturevalley.com.pk/">
+              <Link legacyBehavior href="https://leafscan.naturevalley.com.pk/">
                 <a>Plant Identifier & Disease Finder</a>
+              </Link>
+            </li>
+            <li>
+              <Link legacyBehavior href="https://design.naturevalley.com.pk/">
+                <a>Garden Planner</a>
               </Link>
             </li>
           </ul>

@@ -108,6 +108,29 @@ const MobileMenu = ({ handleShow, logo, extraClass, barIcon }) => {
                   </li>
                   <li className="menu-item has-children">
                     <a href="#">
+                      AI Tools
+                      <span
+                        className="dd-trigger"
+                        onClick={() => active("AI Tools")}
+                      >
+                        <i className="far fa-angle-down" />
+                      </span>
+                    </a>
+                    <ul className="sub-menu" style={activeSubMenu("AI Tools")}>
+                      <li>
+                        <Link legacyBehavior href="https://leafscan.naturevalley.com.pk/">
+                          Plant Identifier & Disease Finder
+                        </Link>
+                      </li>
+                      <li>
+                        <Link legacyBehavior href="https://design.naturevalley.com.pk/">
+                          Garden Planner
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="menu-item has-children">
+                    <a href="#">
                       Service
                       <span
                         className="dd-trigger"

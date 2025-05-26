@@ -52,8 +52,9 @@ const Index = () => {
                                         <p></p>
                                         <p data-animation="fadeInUp" data-delay=".6s">Blending Technology with Nature to Create Smarter, Greener Spaces.</p>
                                         <div class="hero-button mb-30" data-animation="fadeInDown" data-delay=".7s">
-                                            <a href="https://ai.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
-                                
+                                            <a href="https://design.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Garden Planner</a>
+                                            <a href="https://leafscan.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -76,8 +77,8 @@ const Index = () => {
                                         <p></p>
                                         <p data-animation="fadeInUp" data-delay=".6s">Blending Technology with Nature to Create Smarter, Greener Spaces.</p>
                                         <div class="hero-button mb-30" data-animation="fadeInDown" data-delay=".7s">
-                                            <a href="https://ai.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
-                                
+                                            <a href="https://design.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Garden Planner</a>
+                                            <a href="https://leafscan.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
                                         </div>
                                     </div>
                                 </div>
@@ -100,8 +101,8 @@ const Index = () => {
                                         <p></p>
                                         <p data-animation="fadeInUp" data-delay=".6s">Blending Technology with Nature to Create Smarter, Greener Spaces.</p>
                                         <div class="hero-button mb-30" data-animation="fadeInDown" data-delay=".7s">
-                                            <a href="https://ai.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
-                                
+                                            <a href="https://design.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Garden Planner</a>
+                                            <a href="https://leafscan.naturevalley.com.pk/" class="main-btn golden-btn mb-10">Identify Plant & Detect Disease</a>
                                         </div>
                                     </div>
                                 </div>
@@ -229,7 +230,7 @@ const Index = () => {
                       <Counter end={20} />+  
                     </h2>  
                     <h6>Years Of Experience</h6>  
-                    <Link legacyBehavior href="/about">  
+                    <Link legacyBehavior href="">  
                       <a className="icon-btn">  
                         <i className="far fa-arrow-right"></i>  
                       </a>  
