@@ -22,6 +22,18 @@ const Index = () => {
 
     fetchVisitorCount();
   }, []);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2252656502777909";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.body.appendChild(script);
+
+    const ads = window.adsbygoogle || [];
+    ads.push({});
+  }, []);
   return (
     <Layout header={3} footer={3}>
       
@@ -473,6 +485,14 @@ const Index = () => {
       {/*====== Start Partners Section ======*/}
       <div class="section-title text-center  mb-50 wow fadeInDown">
 
+      </div>
+      <div className="text-center mb-4">
+        <ins
+          className="adsbygoogle"
+          style={{ display: "inline-block", width: "728px", height: "90px" }}
+          data-ad-client="ca-pub-2252656502777909"
+          data-ad-slot="5536036707"
+        ></ins>
       </div>
       <Partners />
       {/*====== End Partners Section ======*/}
