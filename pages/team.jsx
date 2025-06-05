@@ -99,6 +99,20 @@ const Team = () => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 col-sm-6">
+              {/*====== Single Team Item ======*/}
+              <div className="single-team-item mb-50 wow fadeInRight">
+                <div className="member-img">
+                  <img src="assets/images/team/team-7.jpg" alt="Team Image" />
+                </div>
+                <div className="member-info text-center">
+                  <h3 className="title">
+                      Abu Zar
+                  </h3>
+                  {/* <p>Senior Gardener</p> */}
+                </div>
+              </div>
+            </div>
           </div>
           <div className="row">
             <div className="col-lg-12">
