@@ -35,6 +35,8 @@ const Layout = ({ header, children, footer }) => {
           'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-1J69YXTYDF");'
         }
       </Script>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2252656502777909"
+     crossorigin="anonymous"></Script>
       <Header header={header} />
       <VideoPopup />
       <ImageView />
