@@ -39,8 +39,8 @@ const App = ({ Component, pageProps }) => {
 
         {/* ✅ Move all <link> tags inside <Head> */}
         <Head>
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2252656502777909"
-     crossorigin="anonymous"></script>
+          <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2252656502777909"
+            crossorigin="anonymous"></Script>
           <link
             rel="shortcut icon"
             href="/assets/images/favicon.png"
